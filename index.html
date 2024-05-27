@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio SIPOT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="img/PNT.png" alt="Logo" class="header-logo">
+            <div class="header-text">
+                <h1>Directorio Interno SIPOT</h1>
+                <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Buscar por Nombre, Área, Siglas, o ID...">
+            </div>
+        </div>
+    </header>
+
+
+    <div class="table-container">
+        <table id="directoryTable">
+            <thead>
+                <th>ID <span class="icon"><img src="img/id.png" alt="ID Icon" class="icon-img" /></span></th>
+                <th>Área <span class="icon"><img src="img/area.png" alt="Area Icon" class="icon-img" /></span></th>
+                <th>Siglas</th>
+                <th>Nombre del Titular <span class="icon"><img src="img/titular.png" alt="Nombre del Titular Icon" class="icon-img" /></span></th>
+                <th>Cargo </th>
+                <th>Correo <span class="icon"><img src="img/correo.png" alt="Correo Icon" class="icon-img" /></span></th>
+                <th>Extensión <span class="icon"><img src="img/telefono.png" alt="Extensión Icon" class="icon-img" /></span></th>
+                <th>Nombre del Enlace <span class="icon"><img src="img/titular.png" alt="Nombre del Enlace Icon" class="icon-img" /></span></th>
+                <th>Cargo del Enlace </th>
+                <th>Correo <span class="icon"><img src="img/correo.png" alt="Correo Icon" class="icon-img" /></span></th>
+                <th>Extensión <span class="icon"><img src="img/telefono.png" alt="Extensión Icon" class="icon-img" /></span></th>
+            </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Data will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <div class="pagination-container">
+        <button onclick="previousPage()">Anterior</button>
+        <span id="pageIndicator">Pagina 1</span>
+        <button onclick="nextPage()">Siguiente</button>
+    </div>
+    <footer>
+        <span id="resultCount">Resultados encontrados: 0</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
