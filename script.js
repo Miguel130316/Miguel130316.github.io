@@ -59,6 +59,7 @@ function searchFunction() {
         return item.areaName.toLowerCase().includes(input) ||
                item.owner.toLowerCase().includes(input) ||
                item.acronym.toLowerCase().includes(input) ||
+               item.title.toLowerCase().includes(input) ||
                item.id.toString().toLowerCase().includes(input);
     });
 
